@@ -6,6 +6,7 @@ import Detail from './Detail';
 
 export default function Profile() {    
     const { id } = useParams();
+    console.log(id);
     const [user, setUser] = useState([]);
 
     useEffect(() => {
