@@ -15,7 +15,7 @@ export default function Home() {
         <Row>
             {
               users.map(user => (
-                <Col key={ user.id } style={{ margin: '1rem' }}>
+                <Col key={ user.id } style={ style.col }>
                   <Cards user={ user } />
                 </Col>
               ))
@@ -23,3 +23,9 @@ export default function Home() {
         </Row>
     )
 }
+
+const style = {
+  col: {
+    margin: '1rem'
+  }
+};

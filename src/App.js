@@ -10,7 +10,7 @@ export default function App() {
     <Router>
       <div className="App">
         <Header />
-        <Container>
+        <Container style={ style.container }>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/:id" component={Profile} />
@@ -21,3 +21,9 @@ export default function App() {
     </Router>    
   );
 }
+
+const style = {
+  container: {
+    marginBottom: '10vh'
+  }
+};

@@ -17,8 +17,21 @@ export function Header() {
 
 export function Footer() {
     return (
-        <footer>
-            
+        <footer style={ style.footer } className="position-fixed d-flex justify-content-center align-items-center">
+            <div style={ style.footer_text }>2020@QuanMuiTo</div>
         </footer>
     )
 }
+
+const style = {
+    footer: {
+        bottom: 0,
+        width: '100%',
+        height: '5vh',
+        marginTop: '2rem',
+        backgroundColor: '#343a40'
+    },
+    footer_text: {
+        color: 'white'
+    }
+};
