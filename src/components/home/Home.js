@@ -12,15 +12,15 @@ export default function Home() {
     }, [])
     
     return (
-        <Row>
-            {
-              users.map(user => (
-                <Col key={ user.id } style={ style.col }>
-                  <Cards user={ user } />
-                </Col>
-              ))
-            }
-        </Row>
+      <Row>
+          {
+            users.map(user => (
+              <Col key={ user.id } style={ style.col }>
+                <Cards user={ user } />
+              </Col>
+            ))
+          }
+      </Row>
     )
 }
 

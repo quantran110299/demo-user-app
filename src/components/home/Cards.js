@@ -20,7 +20,7 @@ export default function Cards({ user }) {
                     <a href={ user.website }>{ user.website }</a>
                 </Card.Text>
                 
-                <a href={ "/" + user.id }>
+                <a href={ "/demo-user-app/" + user.id }>
                     <Button style={ style.button } variant="primary">
                         View User Profile
                     </Button>
