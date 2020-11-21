@@ -12,8 +12,12 @@ export default function App() {
         <Header />
         <Container style={ style.container }>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/:id" component={Profile} />
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/:id">
+              <Profile/>
+            </Route>
           </Switch>
         </Container>
         <Footer />

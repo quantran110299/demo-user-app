@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {  } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import Picture from './Picture';
 import Detail from './Detail';
 
