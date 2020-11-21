@@ -16,51 +16,50 @@ export default function Profile() {
         .then(json => setUser(json))
     }, [id])
 
-    // if (user.length !== 0) {
-    //     return (
-    //         <div>
-    //             <Picture name={ user.name } />
+    if (user.length !== 0) {
+        return (
+            <div>
+                <Picture name={ user.name } />
 
-    //             <Detail
-    //                 isOpen={true}
-    //                 title='Personal information'
-    //                 info={{
-    //                     Name: user.name,
-    //                     Username: user.username,
-    //                     Email: user.email,
-    //                     Phone: user.phone,
-    //                     Website: user.website
-    //                 }}
-    //             />
+                <Detail
+                    isOpen={true}
+                    title='Personal information'
+                    info={{
+                        Name: user.name,
+                        Username: user.username,
+                        Email: user.email,
+                        Phone: user.phone,
+                        Website: user.website
+                    }}
+                />
                 
-    //             <br></br>
+                <br></br>
 
-    //             <Detail
-    //                 isOpen={false}
-    //                 title='Address'
-    //                 info={{
-    //                     Street: user.address.street,
-    //                     Suite: user.address.suite,
-    //                     City: user.address.city,
-    //                     Zipcode: user.address.zipcode
-    //                 }}
-    //             />
+                <Detail
+                    isOpen={false}
+                    title='Address'
+                    info={{
+                        Street: user.address.street,
+                        Suite: user.address.suite,
+                        City: user.address.city,
+                        Zipcode: user.address.zipcode
+                    }}
+                />
 
-    //             <br></br>
+                <br></br>
 
-    //             <Detail
-    //                 isOpen={false}
-    //                 title='Company'
-    //                 info={{
-    //                     Title: user.company.name,
-    //                     Description: user.company.catchPhrase + user.company.bs,
-    //                 }}
-    //             />
-    //         </div>
-    //     )
-    // }
-    // else {
-    //     return (<div></div>)
-    // }
-    return (<div></div>) 
+                <Detail
+                    isOpen={false}
+                    title='Company'
+                    info={{
+                        Title: user.company.name,
+                        Description: user.company.catchPhrase + user.company.bs,
+                    }}
+                />
+            </div>
+        )
+    }
+    else {
+        return (<div></div>)
+    }
 }

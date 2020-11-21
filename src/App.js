@@ -12,8 +12,8 @@ export default function App() {
         <Header />
         <Container style={ style.container }>
           <Switch>
-            <Route exact path="/demo-user-app" component={Home} />
-            <Route exact path="/demo-user-app/:id" component={Profile} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/:id" component={Profile} />
           </Switch>
         </Container>
         <Footer />
